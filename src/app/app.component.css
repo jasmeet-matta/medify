@@ -1,0 +1,15 @@
+.row{
+    justify-content: space-evenly;
+}
+
+.card{
+    -webkit-box-shadow: 25px 23px 45px 0px rgba(191,191,191,1);
+    -moz-box-shadow: 25px 23px 45px 0px rgba(191,191,191,1);
+    box-shadow: 25px 23px 45px 0px rgba(191,191,191,1);
+    padding: 0;
+}
+
+.btn{
+    background-color: #452775 !important;
+    border: none;
+}

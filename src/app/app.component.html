@@ -1,1 +1,33 @@
-<h1>test</h1>
+<app-navbar></app-navbar>
+
+<div class="container-fluid p-3 mt-2">
+  <div class="row">
+    <h1 class="text-center">Dummy Medicine Listing Page</h1>
+    <h4 class="text-center text-success">Cart count is - {{cartCount}}</h4>
+    <div class="medicines row" infinite-scroll (scrolled)="onScroll()">
+      <!-- Medicine listing goes here -->
+      <div *ngFor="let medicine of medicines" class="card mb-3 col-6 col-md-4 col-sm-6 col-xs-12 m-4">
+      <div>
+        <div class="card-header text-white fw-bold" style="background-color: #563191;">
+          {{medicine.username}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ medicine.name }}</h5>
+          <p class="card-text"> {{ medicine.email }}</p>
+          <button class="btn text-white" (click)="updateCart(medicine.name)">Add to cart</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+
+  </div>    
+
+
+
+
+
+
+
+
+
